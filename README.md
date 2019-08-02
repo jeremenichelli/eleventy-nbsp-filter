@@ -1,5 +1,7 @@
 # eleventy-nbsp-filter
 
+[![Build Status](https://travis-ci.org/jeremenichelli/eleventy-nbsp-filter.svg?branch=master)](https://travis-ci.org/jeremenichelli/eleventy-nbsp-filter)
+
 🛸 Filter for Eleventy to replace spaces between words with &nbsp; characters.
 
 ## Motivation
