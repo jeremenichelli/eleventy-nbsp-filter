@@ -1,4 +1,5 @@
 export default (wordsToJoin, maxlength) => {
+  // throw when arguments aren't correct
   if (wordsToJoin < 2)
     throw new Error(
       'eleventy-nbsp-filter: first argument (words count) should be 2 or higher.'
@@ -8,6 +9,7 @@ export default (wordsToJoin, maxlength) => {
     throw new Error(
       'eleventy-nbsp-filter: filter expects two number arguments.'
     )
+
   // build filter function
   return (value) => {
     const wordsArray = value.split(/\s/).reverse()
