@@ -1,8 +1,8 @@
 {
-  "name": "package-starter",
+  "name": "eleventy-nbsp-filter",
   "version": "0.0.0",
-  "description": "Template repository for package maintenance and publishing ",
-  "main": "dist/package-starter.js",
+  "description": "Filter for Eleventy to replace spaces between words with &nbsp; characters",
+  "main": "dist/eleventy-nbsp-filter.js",
   "scripts": {
     "format": "prettier ./**/*.js --write",
     "test": "ava --verbose",
@@ -18,17 +18,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremenichelli/package-starter.git"
+    "url": "git+https://github.com/jeremenichelli/eleventy-nbsp-filter.git"
   },
   "keywords": [
-    "boilerplate"
+    "eleventy",
+    "liquid",
+    "filter",
+    "spaces",
+    "nbsp"
   ],
   "author": "Jeremias Menichelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeremenichelli/package-starter/issues"
+    "url": "https://github.com/jeremenichelli/eleventy-nbsp-filter/issues"
   },
-  "homepage": "https://github.com/jeremenichelli/package-starter#readme",
+  "homepage": "https://github.com/jeremenichelli/eleventy-nbsp-filter#readme",
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",
