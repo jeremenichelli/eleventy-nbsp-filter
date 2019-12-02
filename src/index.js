@@ -12,20 +12,21 @@ export default (wordsToJoin, maxlength) => {
 
   // build filter function
   return (value) => {
-    const wordsArray = value.split(/\s/).reverse()
+    const wordsArray = value.split(/\s/)
 
     // return when no spaces are present
-    if (wordsArray.length === 1) return value
+    if (wordsArray.length < 2) return value
 
     // return value if last characters count exceeds limit
     let lastCharactersLength = 0
-    for (let i = 0; i < wordsToJoin && i < wordsArray.length; i++)
+    let i = Math.max(0, wordsArray.length - wordsToJoin)
+    for (; i < wordsArray.length; i++)
       lastCharactersLength += wordsArray[i].length
 
     if (lastCharactersLength > maxlength) return value
 
     // reduce string adding &nbsp; characters
-    return wordsArray.reverse().reduce((acc, item, index, array) => {
+    return wordsArray.reduce((acc, item, index, array) => {
       if (index === 0) return item
       if (array.length - index < wordsToJoin) return `${acc}&nbsp;${item}`
 
