@@ -19,6 +19,13 @@ test('adds nbsp character', (t) => {
   t.is(filter(testString), result)
 })
 
+test('adds nbsp character for more than two words', (t) => {
+  const filter = nbspFilter(3, 12)
+  const testString = `On the planet Mars, they have clothes just like ours`
+  const result = `On the planet Mars, they have clothes just&nbsp;like&nbsp;ours`
+  t.is(filter(testString), result)
+})
+
 test('does not act when no spaces are present', (t) => {
   const filter = nbspFilter(2, 10)
   const testString = `Silverstein`
