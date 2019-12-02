@@ -14,10 +14,10 @@ I found myself _polluting_ my titles with this character to then remove it, what
 
 ```sh
 # npm
-npm i eleventy-nbsp-filter --save
+npm i eleventy-nbsp-filter --save-dev
 
 # yarn
-yarn add eleventy-nbsp-filter
+yarn add eleventy-nbsp-filter --dev
 ```
 
 ## Add the filter
