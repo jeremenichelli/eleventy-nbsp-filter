@@ -22,6 +22,7 @@
   },
   "keywords": [
     "eleventy",
+    "eleventy-plugin",
     "liquid",
     "filter",
     "spaces",
